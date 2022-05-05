@@ -1,0 +1,154 @@
+<!doctype html>
+<!-- initial structure from: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Guitar Hero TinyType</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="lib/jquery-ui.min.css" /> -->
+
+  </head>
+
+  <body>
+    <h1>Guitar Hero TinyType M2</h1>
+
+    <!-- A table containing 4 columns and 7 rows to store the alphabet -->
+    <!-- TODO: replace the table with lottery slot machine wheels like this: https://stackoverflow.com/questions/33157307/how-to-make-a-html5-spinning-list-rotating-wheel-selector-picker -->
+    <table id="TEXT-table">
+      <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+      </tr>
+      <tbody id="TEXT-alphabet">
+        <tr>
+          <td>a</td>
+          <td>h</td>
+          <td>o</td>
+          <td>v</td>
+        </tr>
+        <tr>
+          <td>b</td>
+          <td>i</td>
+          <td>p</td>
+          <td>w</td>
+        </tr>
+        <tr>
+          <td>c</td>
+          <td>j</td>
+          <td>q</td>
+          <td>x</td>
+        </tr>
+        <tr>
+          <td>d</td>
+          <td>k</td>
+          <td>r</td>
+          <td>y</td>
+        </tr>
+        <tr>
+          <td>e</td>
+          <td>l</td>
+          <td>s</td>
+          <td>z</td>
+        </tr>
+        <tr>
+          <td>f</td>
+          <td>m</td>
+          <td>t</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>g</td>
+          <td>n</td>
+          <td>u</td>
+          <td>~</td>
+        </tr>
+      </tbody>
+    </table>
+
+      <!-- A table containing 4 columns and 7 rows to store the EMOJI alphabet -->
+      <table id="EMOJI-table">
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+        <tbody id="EMOJI-alphabet">
+          <tr>
+            <td>&#128512</td>
+            <td>&#128513</td>
+            <td>&#128514</td>
+            <td>&#128515</td>
+          </tr>
+          <tr>
+            <td>&#128517</td>
+            <td>&#128519</td>
+            <td>&#128545</td>
+            <td>&#128521</td>
+          </tr>
+          <tr>
+            <td>&#128522</td>
+            <td>&#128523</td>
+            <td>&#128524</td>
+            <td>&#128525</td>
+          </tr>
+          <tr>
+            <td>&#128526</td>
+            <td>&#128529</td>
+            <td>&#128531</td>
+            <td>&#128534</td>
+          </tr>
+          <tr>
+            <td>&#128536</td>
+            <td>&#128540</td>
+            <td>&#128544</td>
+            <td>&#128546</td>
+          </tr>
+          <tr>
+            <td>&#128548</td>
+            <td>&#128549</td>
+            <td>&#128552</td>
+            <td>_</td>
+          </tr>
+          <tr>
+            <td>&#128557</td>
+            <td>&#128561</td>
+            <td>&#128564</td>
+            <td>&#128281</td> 
+          </tr>
+        </tbody>
+      </table>
+
+    <!-- A Text bar where the existing message is displayed -->
+    <div id="message">
+
+    </div>
+
+    <table id="tbMain">
+      <tbody>
+        <tr id="trCanvas">
+          <td>
+            <canvas id="cvsMain"></canvas>
+          </td>
+        </tr>
+        <tr>
+          <td id="gesture">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="unistroke_recognizer.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
+  </body>
+</html>

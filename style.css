@@ -1,0 +1,60 @@
+:root{
+    --colWidth: 50px;
+    --fullWidth: calc(var(--colWidth) * 4);
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    width: var(--fullWidth);
+}
+
+#EMOJI-table {
+    display: none; /*Initially hide the table*/
+}
+
+td {
+    width: var(--colWidth);
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    font-size: 1.5em;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-group {
+    margin: auto;
+}
+
+#message {
+    background: ghostwhite; 
+    font-size: 14px; 
+    padding: 1px; 
+    border: 1px solid lightgray; 
+    border-radius: 5px;
+    margin: auto;
+    width: var(--fullWidth);
+    min-height: 25px;
+}
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#TEXT-alphabet tr:nth-child(6n){
+    background-color: #f9e971;
+}
+
+#EMOJI-alphabet tr:nth-child(6n){
+    background-color: #f9e971;
+}
+
+#gesture {
+    font-size: 12px;
+    text-align: center;
+}
+
+button {
+    width: var(--colWidth);
+}
