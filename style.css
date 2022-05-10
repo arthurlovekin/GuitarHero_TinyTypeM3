@@ -4,17 +4,23 @@
 }
 
 table {
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
-    width: var(--fullWidth);
+    /* width: var(--fullWidth); */
 }
 
 #EMOJI-table {
+    width: var(--fullWidth);
     display: none; /*Initially hide the table*/
 }
 
-td {
-    width: var(--colWidth);
+#TEXT-table{
+    width: var(--fullWidth);
+}
+
+#tinytype_container {
+    /* width: var(--colWidth); */
+    width: var(--fullWidth);
     /* border: 1px solid #ccc; */
     text-align: center;
     font-size: 1.5em;
@@ -55,6 +61,6 @@ h1 {
     text-align: center;
 }
 
-button {
+/* button {
     width: var(--colWidth);
-}
+} */

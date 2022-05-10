@@ -136,14 +136,14 @@ function onResults(results) {
             M3GESTURE.LArmed = false;
             //if wrist is to the right of shoulder type 2 else type 1
             if(results.poseLandmarks[16].x < 0 || results.poseLandmarks[16].x > 1) {
-                console.log(0);
+                console.log(-1);
                 //do nothing
             } else if(results.poseLandmarks[16].x > results.poseLandmarks[12].x) {
-                console.log(2);
-                //type 2
-            } else {
                 console.log(1);
-                //type 1
+                typeLetter(1);
+            } else {
+                console.log(0);
+                typeLetter(0);
             }
         }
         //Right arm
@@ -155,14 +155,14 @@ function onResults(results) {
             M3GESTURE.RArmed = false;
             //if wrist is to the right of shoulder type 4 else type 3
             if(results.poseLandmarks[15].x < 0 || results.poseLandmarks[15].x > 1) {
-                console.log(0);
+                console.log(-1);
                 //do nothing
             } else if(results.poseLandmarks[15].x > results.poseLandmarks[11].x) {
-                console.log(4);
-                //type 4
-            } else {
                 console.log(3);
-                //type 3
+                typeLetter(3);
+            } else {
+                console.log(2);
+                typeLetter(2);
             }
         }
 
