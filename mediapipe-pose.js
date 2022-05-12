@@ -1,3 +1,4 @@
+// https://github.com/google/mediapipe/issues/1411
 import DeviceDetector from "https://cdn.skypack.dev/device-detector-js@2.2.10";
 // Usage: testSupport({client?: string, os?: string}[])
 // Client and os are regular expressions.
@@ -131,9 +132,18 @@ function onResults(results) {
         if(results.poseLandmarks[16].y < M3GESTURE.lowThresh && results.poseLandmarks[16].y > 0) {
             M3GESTURE.LArmed = true;
             console.log("L Armed");
+            //change color of first and second columns
+            document.getElementsByClassName("left")[0].style.color = 'red';
+            document.getElementsByClassName("left")[1].style.color = 'red';
+            document.getElementsByClassName("left")[2].style.color = 'red';
+            document.getElementsByClassName("left")[3].style.color = 'red';
         }
         if(M3GESTURE.LArmed && results.poseLandmarks[16].y > M3GESTURE.highThresh && results.poseLandmarks[16].y < 1) {
             M3GESTURE.LArmed = false;
+            document.getElementsByClassName("left")[0].style.color = 'black';
+            document.getElementsByClassName("left")[1].style.color = 'black';
+            document.getElementsByClassName("left")[2].style.color = 'black';
+            document.getElementsByClassName("left")[3].style.color = 'black';
             //if wrist is to the right of shoulder type 2 else type 1
             if(results.poseLandmarks[16].x < 0 || results.poseLandmarks[16].x > 1) {
                 console.log(-1);
@@ -150,9 +160,17 @@ function onResults(results) {
         if(results.poseLandmarks[15].y < M3GESTURE.lowThresh && results.poseLandmarks[15].y > 0) {
             M3GESTURE.RArmed = true;
             console.log("R Armed");
+            document.getElementsByClassName("right")[0].style.color = 'red';
+            document.getElementsByClassName("right")[1].style.color = 'red';
+            document.getElementsByClassName("right")[2].style.color = 'red';
+            document.getElementsByClassName("right")[3].style.color = 'red';
         }
         if(M3GESTURE.RArmed && results.poseLandmarks[15].y > M3GESTURE.highThresh && results.poseLandmarks[15].y < 1) {
             M3GESTURE.RArmed = false;
+            document.getElementsByClassName("right")[0].style.color = 'black';
+            document.getElementsByClassName("right")[1].style.color = 'black';
+            document.getElementsByClassName("right")[2].style.color = 'black';
+            document.getElementsByClassName("right")[3].style.color = 'black';
             //if wrist is to the right of shoulder type 4 else type 3
             if(results.poseLandmarks[15].x < 0 || results.poseLandmarks[15].x > 1) {
                 console.log(-1);

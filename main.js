@@ -70,8 +70,8 @@ function show_table() {
 	t2 = document.getElementById("EMOJI-table");
 	if(VISIBLE === 1) {
 		t1.style.display = 'block';
-		//TODO: center table (I think the above messes up the og css)
-		t1.style.margin = 'auto';
+		t1.style.width = '200px';
+		// t1.style.margin = 'auto';
 		t2.style.display = 'none';
 	} else {
 		t2.style.display = 'block';

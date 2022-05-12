@@ -3,51 +3,12 @@
     --fullWidth: calc(var(--colWidth) * 4);
 }
 
-table {
-    /* margin: auto; */
-    text-align: center;
-    /* width: var(--fullWidth); */
-}
-
-#EMOJI-table {
-    width: var(--fullWidth);
-    display: none; /*Initially hide the table*/
-}
-
-#TEXT-table{
-    width: var(--fullWidth);
-}
-
-#tinytype_container {
-    /* width: var(--colWidth); */
-    width: var(--fullWidth);
-    /* border: 1px solid #ccc; */
-    text-align: center;
-    font-size: 1.5em;
-    font-family: monospace;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.btn-group {
-    margin: auto;
-}
-
-#message {
-    background: ghostwhite; 
-    font-size: 14px; 
-    padding: 1px; 
-    border: 1px solid lightgray; 
-    border-radius: 5px;
-    margin: auto;
-    width: var(--fullWidth);
-    min-height: 25px;
-}
 h1 {
     font-size: 24px;
     text-align: center;
 }
 
+/* TODO: Combine this and the subsequent */
 #TEXT-alphabet tr:nth-child(6n){
     background-color: #f9e971;
 }
@@ -61,6 +22,44 @@ h1 {
     text-align: center;
 }
 
-/* button {
-    width: var(--colWidth);
-} */
+#message {
+    background: ghostwhite; 
+    font-size: 14px; 
+    padding: 1px; 
+    border: 1px solid lightgray; 
+    border-radius: 5px;
+    margin: auto;
+    width: var(--fullWidth);
+    min-height: 25px;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+}
+
+#EMOJI-table {
+    width: var(--fullWidth);
+    display: none; /*Initially hide the table*/
+}
+
+#TEXT-table{
+    width: var(--fullWidth);
+}
+
+#tinytype_container {
+    width: 25%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .container { */
+#video_container {
+    /* position: absolute; */
+    background-color: #596e73;
+    width: 45%;
+    max-height: 45%;
+}

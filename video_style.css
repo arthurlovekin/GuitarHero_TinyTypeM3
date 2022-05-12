@@ -1,155 +1,147 @@
 @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
-  .abs {
-    position: absolute;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  a:hover {
-    color: lightblue;
-  }
-  
-  /* body {
-    bottom: 0;
-    font-family: "Titillium Web", sans-serif;
-    color: white;
-    left: 0;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform-origin: 0px 0px;
-    overflow: hidden;
-  } */
-  
-  /* .container { */
-  #video_container {
-    position: absolute;
-    background-color: #596e73;
-    width: 60%;
-    max-height: 100%;
-  }
-  
-  .input_video {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  .input_video.selfie {
-    transform: scale(-1, 1);
-  }
-  
-  .input_image {
-    position: absolute;
-  }
-  
-  .canvas-container {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .output_canvas {
-    /* width: 100%; */
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: relative;
-    margin: auto;
-    /* left: 3px;
-    top: 3px; */
-  }
-  
-  /* .logo {
-    bottom: 10px;
-    right: 20px;
-  }
-  .logo .title {
-    color: white;
-    font-size: 28px;
-  }
-  .logo .subtitle {
-    position: relative;
-    color: white;
-    font-size: 10px;
-    left: -30px;
-    top: 20px;
-  } */
-  
-  .control-panel {
-    position: absolute;
-    right: 2px;
-    top: 2px;
-  }
-  
-  .loading {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    align-items: center;
-    backface-visibility: hidden;
-    justify-content: center;
-    opacity: 1;
-    transition: opacity 1s;
-  }
-  .loading .message {
-    font-size: x-large;
-  }
-  .loading .spinner {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    animation: spin 1s linear infinite;
-    border: 32px solid #bebebe;
-    border-top: 32px solid #3498db;
-    border-radius: 50%;
-  }
-  
-  .loaded .loading {
-    opacity: 0;
-  }
-  
-  .shoutout {
-    left: 0;
-    right: 0;
-    bottom: 40px;
-    text-align: center;
-    font-size: 24px;
-    position: absolute;
-  }
-  
-  /* Added from html file */
-  .square-box {
-    width: 15%;
-    height: 0;
-    padding-top: 15%;
-    /* position: absolute;
-    right: 1px;
-    top: 1px; */
-  }
-  
-  .landmark-grid-container {
-    height: 33%;
-    width: 33%;
-    /* position: absolute;
-    top:0;
-    left:0; */
-    background-color: #99999999;
-  }
+}
+
+
+/* .abs {
+  position: absolute;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: lightblue;
+} */
+
+/* body {
+  bottom: 0;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: 0px 0px;
+  overflow: hidden;
+} */
+
+.input_video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.input_video.selfie {
+  transform: scale(-1, 1);
+}
+
+.input_image {
+  position: absolute;
+}
+
+.canvas-container {
+  display: flex;
+  height: 75%;
+  width: 75%;
+  justify-content: center;
+  align-items: top;
+}
+
+.output_canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 10%;
+  margin: auto;
+}
+
+/* .logo {
+  bottom: 10px;
+  right: 20px;
+}
+.logo .title {
+  color: white;
+  font-size: 28px;
+}
+.logo .subtitle {
+  position: relative;
+  color: white;
+  font-size: 10px;
+  left: -30px;
+  top: 20px;
+} */
+
+.control-panel {
+  position: absolute;
+  right: 2px;
+  top: 5%;
+}
+
+
+.square-box {
+  width: 33%;
+  margin: auto;
+  /* height: 0;
+  padding-top: 33%; */
+}
+
+.landmark-grid-container {
+  display:block;
+  height: 100%;
+  width: 100%;
+  background-color: #99999999;
+}
+
+  /* position: absolute;
+  top:0;
+  left:0; */
+
+
+.loading {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  backface-visibility: hidden;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.loading .message {
+  font-size: x-large;
+}
+.loading .spinner {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  border: 32px solid #bebebe;
+  border-top: 32px solid #3498db;
+  border-radius: 50%;
+}
+
+.loaded .loading {
+  opacity: 0;
+}
+
+/* .shoutout {
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+} */

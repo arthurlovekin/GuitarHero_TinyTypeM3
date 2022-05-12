@@ -26,10 +26,11 @@
           <!-- TODO: replace the table with lottery slot machine wheels like this: https://stackoverflow.com/questions/33157307/how-to-make-a-html5-spinning-list-rotating-wheel-selector-picker -->
           <table id="TEXT-table">
             <tr>
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-              <th>4</th>
+              <!-- 1,2,3,4 TODO: Figure out CSS so you don't need this hack -->
+              <th class="left">&#10240&#49&#10240</th>
+              <th class="left">&#10240&#50&#10240</th>
+              <th class="right">&#10240&#51&#10240</th>
+              <th class="right">&#10240&#52&#10240</th>
             </tr>
             <tbody id="TEXT-alphabet">
               <tr>
@@ -80,10 +81,11 @@
             <!-- A table containing 4 columns and 7 rows to store the EMOJI alphabet -->
             <table id="EMOJI-table">
               <tr>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
+                <!-- 1,2,3,4 TODO: Figure out CSS so you don't need this hack -->
+                <th class="left">&#10240&#49&#10240</th>
+                <th class="left">&#10240&#50&#10240</th>
+                <th class="right">&#10240&#51&#10240</th>
+                <th class="right">&#10240&#52&#10240</th>
               </tr>
               <tbody id="EMOJI-alphabet">
                 <tr>
@@ -152,17 +154,17 @@
         </td>
         <td id="video_container">
           <!-- Camera input -->
-          <div class="container">
-            <video class="input_video"></video>
-            <canvas class="output_canvas"></canvas>
-            <!-- width="1280px" height="720px" -->
-            <div class="loading">
-              <div class="spinner"></div>
-              <div class="message">
-                Loading
-              </div>
+          
+          <video class="input_video"></video>
+          <canvas class="output_canvas"></canvas>
+          <!-- width="1280px" height="720px" -->
+          <div class="loading">
+            <div class="spinner"></div>
+            <div class="message">
+              Loading
             </div>
           </div>
+          
           <div class='square-box'>
             <div class="landmark-grid-container">
             </div>
